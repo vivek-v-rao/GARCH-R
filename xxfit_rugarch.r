@@ -52,7 +52,7 @@ prices.file            = "spy_tlt.csv"
 max.sym                = 1000
 
 # ── load prices ──────────────────────────────────────────────────────────────
-cat("\nprices file =", prices.file, "\n")
+cat("\nprices file =", prices.file)
 prices <- read.csv(prices.file,
                    header           = TRUE,
                    stringsAsFactors = FALSE,
@@ -69,14 +69,14 @@ prices <- na.omit(prices)
 
 symbols <- names(prices)
 periods <- "days"
-cat("\nperiod =", periods, "\n")
+cat("\nperiod =", periods)
 
 if (periods %in% c("weeks","months","quarters","years")) {
     prices <- prices[endpoints(prices, periods)]
 }
 
 nobs <- nrow(prices)
-cat("\nnobs =", nobs, "\n")
+cat("\nnobs =", nobs)
 
 # ── compute returns ──────────────────────────────────────────────────────────
 xret <- as.data.frame(scale.ret * na.omit(Return.calculate(prices)))

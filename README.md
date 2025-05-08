@@ -1,2 +1,2 @@
 # GARCH-R
-Use R packages to fit GARCH models
+Use R packages to fit GARCH models. The R packages demonstrated are [betategarch](https://cran.r-project.org/web/packages/betategarch/index.html), [fGarch](https://cran.r-project.org/web/packages/fGarch/index.html), [garchx](https://cran.r-project.org/web/packages/garchx/index.html), [gets](https://cran.r-project.org/web/packages/gets/index.html), [lgarch](https://cran.r-project.org/web/packages/lgarch/index.html), [rugarch](https://cran.r-project.org/web/packages/rugarch/index.html), [tseries](https://cran.r-project.org/web/packages/tseries/), and [tsgarch](https://cran.r-project.org/web/packages/tsgarch/).
